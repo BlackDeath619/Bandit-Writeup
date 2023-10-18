@@ -20,7 +20,7 @@ Since - is an illegal file name, we use a special command to read the file . ' .
 ![image](https://github.com/BlackDeath619/Bandit-Writeup/assets/148000474/88204216-da78-4477-a797-650d5ab6fe4b)
 
 ## Level 2->3
-A filename should be continuous hence we put in quotation or we can use
+A filename should be continuous hence we put in quotation or we can use backslash
 ![image](https://github.com/BlackDeath619/Bandit-Writeup/assets/148000474/f65c621e-4782-4458-89c4-dfeb432ed4d3)
 
 ## Level 3->4
