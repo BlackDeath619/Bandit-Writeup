@@ -14,4 +14,7 @@ In order to view the files present in the list, the 'cat' standing for catenatio
 ![image](https://github.com/BlackDeath619/Bandit-Writeup/assets/148000474/6dfc9b81-581b-4614-9207-98138feeb1b2)
 
 ## Level 2
-ongoing
+Since - is an illegal file name, we use a special command to read the file . ' ./- '
+
+![image](https://github.com/BlackDeath619/Bandit-Writeup/assets/148000474/88204216-da78-4477-a797-650d5ab6fe4b)
+
