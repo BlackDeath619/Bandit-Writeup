@@ -69,6 +69,14 @@ Here our file contains encoded base64, thus we use 'base64 -d' command to decode
 6zPeziLdR2RKNdNYFNb6nVCKzphlXHBM
 ![image](https://github.com/BlackDeath619/Bandit-Writeup/assets/148000474/04afd98c-f284-4b3c-8287-c474c25bd4f1)
 
+## Level 11-12
+I have used Rot13 decipher online to convert the file 'data.txt' 
+JVNBBFSmZwKKOP0XbFXOoW8chDz5yVRv
+![image](https://github.com/BlackDeath619/Bandit-Writeup/assets/148000474/8df90941-80a0-4b07-bc1b-467f10553255)
+
+this translates to 'The password is JVNBBFSmZwKKOP0XbFXOoW8chDz5yVRv'
+
+
 
 
 
