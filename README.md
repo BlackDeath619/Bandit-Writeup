@@ -1,4 +1,4 @@
-# Bandit-Writeup
+![image](https://github.com/BlackDeath619/Bandit-Writeup/assets/148000474/eb567f12-70c1-468c-a864-1572137a1453)# Bandit-Writeup
 This is repository for Over The Wire.
 This will be my understanding of how I have worked on OTW.
 
@@ -94,7 +94,57 @@ JVNBBFSmZwKKOP0XbFXOoW8chDz5yVRv
 this translates to 'The password is JVNBBFSmZwKKOP0XbFXOoW8chDz5yVRv'
 
 ## Level 12->13
+Use of xxd is used here to reverse the hexdump 
+Initially we create a directory to and copy data.txt to the said directory, here I have used directory name as 'BD'
+mkdir /tmp/BD
+cp data.txt /tmp/BD
+cd /tmp/BD
 
+we use the xxd command to reverse the hexdump and save the data into another file in the BD directory
+xxd -reverse daata.tx > dump
+
+on using file command we find out that the reversed hexdump is actually compressed, hence we convert the file to gzip (to decompress) format by
+mv dump dump.gz
+gunzip dump.gz
+
+We extract files from the given saved file in our directory
+![image](https://github.com/BlackDeath619/Bandit-Writeup/assets/148000474/668c7c55-0f14-4591-95d8-937f0f7e6f2d)
+![image](https://github.com/BlackDeath619/Bandit-Writeup/assets/148000474/a12649a5-e69f-41ba-8ece-cbd674901a5d)
+![image](https://github.com/BlackDeath619/Bandit-Writeup/assets/148000474/873b4a01-da28-4873-a236-d9298af211e9)
+
+The password is wbWdlBxEir4CaE8LaPhauuOo6pwRmrDw
+
+## Level 13->14
+
+Here we use the -i variant of ssh, basically it selects the file from within our directory for a private login
+
+ssh -i 
+
+We can use ls -l which gives us a long format and tells us about the owner and readers of the file
+and this time the machine we will be logging on will be localhost and not bandit.labs.overthewire.org
+
+![image](https://github.com/BlackDeath619/Bandit-Writeup/assets/148000474/cc6817dc-1885-48d0-95b9-dbe4190d0258)
+![image](https://github.com/BlackDeath619/Bandit-Writeup/assets/148000474/6a4bb9f7-7d5a-42bc-9206-11422bba6b22)
+
+pass for 14 fGrHPx402xGC7U7rXKDaxiWFTOiF0ENq
+
+## Level 14->15
+
+From the previous level we know that lvl 14's password is in /etc/bandit_pass/bandit14
+the condition here is that lvl 14's password will give us the password for lvl 15
+
+here we use a new command netcat which allows us to connect remote hosts with different ports
+here our host is localhost with port 30000
+Hence we use 
+nc localhost 30000
+
+and enter the password we have found by entering cat /etc/bandit_pass/bandit14
+
+![image](https://github.com/BlackDeath619/Bandit-Writeup/assets/148000474/5e1b8f7c-6366-459f-8fd9-1c2ba740dd29)
+
+pass for 15 jN2kgmIXJ6fShzhT2avhotn4Zcka6tnt
+
+## level 15->16
 
 
 
