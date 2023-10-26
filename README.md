@@ -146,6 +146,17 @@ pass for 15 jN2kgmIXJ6fShzhT2avhotn4Zcka6tnt
 
 ## level 15->16
 
+Here we use Secure Socket Layer instead of Secure Shell
+syntax : openssl s_client -connect [host name]:port
+
+first we get the password for bandit15 found previously and input that into our ssl
+![image](https://github.com/BlackDeath619/Bandit-Writeup/assets/148000474/86cacf45-df3f-47dd-9cef-68b4e0dac1bd)
+![image](https://github.com/BlackDeath619/Bandit-Writeup/assets/148000474/5e5cd7a4-3c15-4d59-9159-301b13522a16)
+
+pass for 16 JQttfApK4SeyHwDlI9SXGR50qclOAil1
+
+## Level 16->17
+
 
 
 
