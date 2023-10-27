@@ -1,4 +1,4 @@
-![image](https://github.com/BlackDeath619/Bandit-Writeup/assets/148000474/eb567f12-70c1-468c-a864-1572137a1453)# Bandit-Writeup
+# Bandit-Writeup
 This is repository for Over The Wire.
 This will be my understanding of how I have worked on OTW.
 
