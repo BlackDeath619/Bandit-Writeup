@@ -190,10 +190,47 @@ and hence using this private key we login to bandit17
 
 ![image](https://github.com/BlackDeath619/Bandit-Writeup/assets/148000474/d0b037aa-cb18-4749-908a-8193b2c0086d)
 
-password for 17 VwOSWtCA7lRKkTfbr2IDh6awj9RNZM5e
+password for 17 VwOSWtCA7lRkTfbr2IDh6awj9RNZM5e
 
 ## Level 17->18
 
+Here we have learnt a new command 'diff' which compares file to file to find the difference
+since the password is in the 'passwords.new' file we used the 2nd password to login to 18
+
+password for 18 hga5tuuCLF6fFzUpnagiMN8ssu9LFrdg
+
+![image](https://github.com/BlackDeath619/Bandit-Writeup/assets/148000474/597aa548-4bd9-4b98-96a2-778ac88ecfcb)
+
+Byebye?
+
+## Level 18->19
+
+In this level, the problem statement says that "Whenever you login to bandit18 you will be kicked out because someone modified it into .bashrc"
+A .bashrc modification basically executes the command (here it logs us out saying 'byebye!') when we enter a host
+
+Hence to counter this, we login with ssh using our command that we want to execute in the host by "[command]" 
+
+![image](https://github.com/BlackDeath619/Bandit-Writeup/assets/148000474/f949672a-b26a-4ffd-933d-017d42e73ae0)
+
+password for 19 awhqfNnAbc1naukrpqDYcF95h7HoMTrC
+
+## Level 19-20
+
+Here, we have a file which can only be opened by a certain uid 'bandit20-do'
+on checking the long format of the file we see rw**s**r
+the s signifies the setuid
+
+Hence on checking the ID on the file by first executing it by './'
+./bandit20-do id
+
+We see that our 'euid' or effective ID for that file is bandit20 which can access the file
+So, we type the command prompt while opening the file and get the password
+
+![image](https://github.com/BlackDeath619/Bandit-Writeup/assets/148000474/1ee7c0d3-108f-4dc8-8889-73a14f135e0f)
+
+passowrd for 20 VxCazJaVykI6W36BkBU0mJTCM8rR95XT
+
+## Level 20-21
 
 
 
