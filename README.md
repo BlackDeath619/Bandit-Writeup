@@ -168,6 +168,34 @@ closed - not listening for connections on that port
 filtered - scanner cannot tell whether open or closed
 unfiltered - the scanner interacts with the port but cannot tell its state i.e. open or closed
 
+on checking the ports using nmap we get port 31790 which accepts ssl 
+Input pass for lvl 16 and we get a private key
+
+![image](https://github.com/BlackDeath619/Bandit-Writeup/assets/148000474/ea76e78d-b726-4d13-a9b8-ee1c2f39a221)
+![image](https://github.com/BlackDeath619/Bandit-Writeup/assets/148000474/8997f7a0-8b9f-48f9-9e23-a9ca3d0c51e5)
+
+We create a temporary directory in which we save our nano
+Nano can be understood as an editor to save our texts and we can access specific lines in it
+![image](https://github.com/BlackDeath619/Bandit-Writeup/assets/148000474/1a01a54a-8d1f-4292-9d0d-462c5b746aab)
+![image](https://github.com/BlackDeath619/Bandit-Writeup/assets/148000474/e4213daf-22a9-496f-befb-cb2ccaac7df5)
+
+We convert our key into private by modifying it using chmod
+chmod 700 pvt.key
+which makes the file pvt.key read+write+executable by 'user only'
+we can check this by using ls -l (long format)
+
+![image](https://github.com/BlackDeath619/Bandit-Writeup/assets/148000474/caf12c08-f001-4bdf-a567-1838fdf63cfe)
+
+and hence using this private key we login to bandit17
+
+![image](https://github.com/BlackDeath619/Bandit-Writeup/assets/148000474/d0b037aa-cb18-4749-908a-8193b2c0086d)
+
+password for 17 VwOSWtCA7lRKkTfbr2IDh6awj9RNZM5e
+
+## Level 17->18
+
+
+
 
 
 
