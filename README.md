@@ -214,7 +214,7 @@ Hence to counter this, we login with ssh using our command that we want to execu
 
 password for 19 awhqfNnAbc1naukrpqDYcF95h7HoMTrC
 
-## Level 19-20
+## Level 19->20
 
 Here, we have a file which can only be opened by a certain uid 'bandit20-do'
 on checking the long format of the file we see rw**s**r
@@ -230,8 +230,20 @@ So, we type the command prompt while opening the file and get the password
 
 passowrd for 20 VxCazJaVykI6W36BkBU0mJTCM8rR95XT
 
-## Level 20-21
+## Level 20->21
 
+In this, bandit 20 has file which compares the passwords from give from a specific port to the password in the previous problem.
+Hence if the passwords are same, it returns the new password to the sender port
+
+Thus we open a new shell and create a new listening port by using 'nc -lvp'
+When we switch on this port and connect the binary file in the first shell to this port, the file gets ready to take input.
+On putting the correct password we get the password in the 2nd shell
+
+![image](https://github.com/BlackDeath619/Bandit-Writeup/assets/148000474/02dd0977-e12f-431b-a209-af1b7a1a2c8d)
+
+password for 21 NvEJF7oVjkddltPSrdKEFOllh9V1IBcq
+
+## Level 21->22
 
 
 
