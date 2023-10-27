@@ -107,6 +107,8 @@ on using file command we find out that the reversed hexdump is actually compress
 mv dump dump.gz
 gunzip dump.gz
 
+We also use tar command to open tar files which is analogous to .exe files in windows
+
 We extract files from the given saved file in our directory
 ![image](https://github.com/BlackDeath619/Bandit-Writeup/assets/148000474/668c7c55-0f14-4591-95d8-937f0f7e6f2d)
 ![image](https://github.com/BlackDeath619/Bandit-Writeup/assets/148000474/a12649a5-e69f-41ba-8ece-cbd674901a5d)
@@ -156,6 +158,15 @@ first we get the password for bandit15 found previously and input that into our 
 pass for 16 JQttfApK4SeyHwDlI9SXGR50qclOAil1
 
 ## Level 16->17
+
+Here we have a range of ports given
+hence we use nmaps with a specified target and range 31000 to 32000
+'nmap' command is a tool to visit multiple ports simultaneously and scan them
+a port maybe open, closed, filtered or unfiltered
+open - an application is listening for connections
+closed - not listening for connections on that port
+filtered - scanner cannot tell whether open or closed
+unfiltered - the scanner interacts with the port but cannot tell its state i.e. open or closed
 
 
 
