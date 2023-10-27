@@ -245,6 +245,16 @@ password for 21 NvEJF7oVjkddltPSrdKEFOllh9V1IBcq
 
 ## Level 21->22
 
+Here the problem tell us to look into the directory '/etc/cron.d/'
+we check the list of files and read the cronjob_bandit22 file
+on reading we find that this file is executing '/usr/bin/cronjob_bandit22.sh' every minute
+further reading the user file, we see that it is dumping its contents into '/tmp/t7O6lds9S0RqQh9aMcz6ShpAoZKF7fgv'
+further reading the dumped on file, we get our password
+
+![image](https://github.com/BlackDeath619/Bandit-Writeup/assets/148000474/8fbb4de8-9dfb-493e-8eb1-fae13ce07542)
+
+Password for 22 WdDozAdTM2z9DiFEQ2mGlwngMfj4EZff
+
 
 
 
