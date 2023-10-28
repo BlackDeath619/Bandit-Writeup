@@ -246,6 +246,9 @@ On putting the correct password we get the password in the 2nd shell
 
 ![image](https://github.com/BlackDeath619/Bandit-Writeup/assets/148000474/02dd0977-e12f-431b-a209-af1b7a1a2c8d)
 
+another way would be 'nc -l -p [port number]'
+and typing the password in the port and connect by suconnecting on another instance of the shell
+
 password for 21 NvEJF7oVjkddltPSrdKEFOllh9V1IBcq
 
 ## Level 21->22
