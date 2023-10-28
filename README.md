@@ -39,9 +39,14 @@ In this level there were multiple files
 The clue was 'human readable' hence, we check the data type of each file in the 'inhere' directory by using the file command
 Since all files were starting with illegal symbol '-', we use './-' command
 
-lrIWWI6bB37kxfiCQZqUdOIYfr6eEeqR
+But this will take time. We use the file command and check all the types of files which are executable using './*' where './' operator is used to execute file
+and '\*' signifies all files in the directory
+
+![image](https://github.com/BlackDeath619/Bandit-Writeup/assets/148000474/c526504a-f051-4e01-8d0b-9521bb160165)
 
 ![image](https://github.com/BlackDeath619/Bandit-Writeup/assets/148000474/019e79e2-8941-4bad-b6fd-5c663d6d6d60)
+
+lrIWWI6bB37kxfiCQZqUdOIYfr6eEeqR
 
 ## Level 5->6 
 In this level there were multiple directories with multiple files
